@@ -1,0 +1,44 @@
+body {
+    font-family: "Lato", sans-serif;
+}
+
+.navbar {
+    position: relative;
+    padding: 0.5rem;
+    background-color: lightblue;
+    border-bottom: 5px;
+    z-index: 1;    
+}
+
+.navbar #app-title {
+    text-align: left;
+    padding-left: 10px;
+    text-decoration: underline;
+    text-shadow: 2px 2px 4px #000000;
+    font-size: 24px;
+    font-style: oblique
+}
+
+.sidebar {
+    float: left;
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    background-color: lightslategray;
+    z-index: 1;
+    padding-top: 10px;
+}
+
+.sidebar .header {
+    margin: auto;
+    font-weight: bold;
+}
+
+.sidebar .header .chat-rooms-title {
+    text-align: center;
+    font-size: 25px;
+}
+
+.sidebar .chat-rooms-list {
+    margin-left: 15px;    
+}
