@@ -3,10 +3,13 @@
 
     <div class="header">
         <p class="chat-rooms-title">Chat Rooms</p>
+        <button class="main-button" ng-click="home.openModal()">Create New ChatRoom</button>
+        <br/>
+        <br/>
     </div>
 
     <section class="chat-rooms-list">
-        <div ng-repeat="room in home.chatRooms">Room 1</div>
+        <div ng-repeat="room in home.chatRooms">{{ room.$value }}</div>
     </section>
 
 </aside>

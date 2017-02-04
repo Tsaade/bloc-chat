@@ -1,3 +1,5 @@
+.nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
+
 body {
     font-family: "Lato", sans-serif;
 }
@@ -15,14 +17,15 @@ body {
     padding-left: 10px;
     text-decoration: underline;
     text-shadow: 2px 2px 4px #000000;
-    font-size: 24px;
-    font-style: oblique
+    font-size: 30px;
+    font-style: oblique;
+    color: white;
 }
 
 .sidebar {
     float: left;
     height: 100%;
-    width: 200px;
+    width: 250px;
     position: fixed;
     background-color: lightslategray;
     z-index: 1;
@@ -30,8 +33,9 @@ body {
 }
 
 .sidebar .header {
-    margin: auto;
+    text-align: center;
     font-weight: bold;
+    color: white;
 }
 
 .sidebar .header .chat-rooms-title {
@@ -39,6 +43,22 @@ body {
     font-size: 25px;
 }
 
+.sidebar .header .main-button {
+    text-align: center;
+    border-radius: 8px;
+    padding: 12px 28px;
+    font-size: 16px;
+    float: center;
+    margin: auto;
+    margin-bottom: 15px;
+}
+
+.sidebar .header .main-button:hover {
+    background-color: lightblue;
+    cursor: pointer;
+}
+
 .sidebar .chat-rooms-list {
-    margin-left: 15px;    
+    margin-left: 15px;
+    color: white;
 }
