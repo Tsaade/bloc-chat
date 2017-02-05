@@ -5,10 +5,9 @@
         this.openModal = function() {
             var modalInstance = $uibModal.open({
                 templateUrl: '/templates/modal.html',
-                size: 'sm',
-                controller: function ($scope, $modalInstance) {
-                    
-                },
+                controller: function ($scope, $uibModalInstance) {
+                    console.log($uibModalInstance);
+                }
             });                
         };
     }
@@ -16,4 +15,4 @@
     angular
         .module('blocChat')
         .controller('HomeCtrl', ['Room', '$uibModal', HomeCtrl]);
-})(); 
+})();
