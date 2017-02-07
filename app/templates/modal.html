@@ -1,18 +1,15 @@
 <!-- This file contains the create new chat room dialog box -->
 <!-- It will include a title, a text field, a create button, and a cancel button -->
 
-<div>
-    <div class="modal-header">
-        <h3 class="modal-title" id="modal-title">Create New Room</h3>
-    </div>
+<div class="modal-header">
+    <h3 class="modal-title" id="modal-title">Create New Room</h3>
+</div>
 
-    <div class="modal-body" id="modal-body">
-        Enter a room name...<br>
-        <input type="text" name="create-new-room">
-    </div>
+<div class="modal-body" id="modal-body">
+    <input type="text" placeholder="Enter new chat room name..." class="form-control" ng-model="roomName">
+</div>
 
-    <div class="modal-footer">
-        <button class="btn btn-primary" type="button" ng-click="something.create()">Create</button>
-        <button class="btn btn-warning" type="button" ng-click="something.cancel()">Cancel</button>
-    </div>
+<div class="modal-footer">
+    <button class="btn btn-primary" type="button" ng-click="create()">Create</button>
+    <button class="btn btn-warning" type="button" ng-click="cancel()">Cancel</button>
 </div>

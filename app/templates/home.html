@@ -1,17 +1,16 @@
 <!-- Creating the sidebar -->
-<aside class= "sidebar">
+<div class= "sidebar">
 
     <div class="header">
         <p class="chat-rooms-title">Chat Rooms</p>
         <div class="new-chat-room">
-            <button class="btn-primary" ng-click="$ctrl.openModal()"> Create New ChatRoom</button>
+            <button class="btn-primary" ng-click="home.openModal()"> Create New Room</button>
             <br/>
             <br/>
         </div>
     </div>
 
-    <section class="chat-rooms-list">
-        <div ng-repeat="room in home.chatRooms">{{ room.$value }}</div>
-    </section>
-
-</aside>
+	<div class="chat-rooms-list">
+		<div ng-repeat="room in home.chatRooms">{{ room.$value }}</div>
+	</div>
+</div>

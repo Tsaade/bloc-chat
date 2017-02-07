@@ -6,9 +6,10 @@ body {
 
 .navbar {
     position: relative;
-    padding: 0.5rem;
+    padding: 1.5rem;
     background-color: lightblue;
     border-bottom: 5px;
+    margin-bottom: 0;
     z-index: 1;    
 }
 
@@ -29,7 +30,7 @@ body {
     position: fixed;
     background-color: lightslategray;
     z-index: 1;
-    padding-top: 10px;
+    padding-top: 15px;
 }
 
 .sidebar .header {
@@ -45,9 +46,11 @@ body {
 
 .sidebar .header .btn-primary {
     text-align: center;
+    background-color: ghostwhite;
     border-radius: 8px;
     padding: 12px 28px;
     font-size: 16px;
+    color: black;
     float: center;
     margin: auto;
     margin-bottom: 15px;
