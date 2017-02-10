@@ -6,20 +6,21 @@ body {
 
 .navbar {
     position: relative;
+    height: 150px;
     padding: 1.5rem;
-    background-color: lightblue;
+    background-color: ghostwhite;
     border-bottom: 5px;
     margin-bottom: 0;
     z-index: 1;    
 }
 
 .navbar #app-title {
-    text-align: left;
-    padding-left: 10px;
-    text-decoration: underline;
-    text-shadow: 2px 2px 4px #000000;
-    font-size: 30px;
-    font-style: oblique;
+    text-align: center;
+    <!-- padding-left: 10px; -->
+    <!-- text-decoration: underline; -->
+    text-shadow: 2px 2px 4px gray;
+    font-size: 50px;
+    <!-- font-style: oblique; -->
     color: white;
 }
 
@@ -27,7 +28,8 @@ body {
     float: left;
     height: 100%;
     width: 250px;
-    position: fixed;
+    position: absolute;
+    height: 100%;
     background-color: lightslategray;
     z-index: 1;
     padding-top: 15px;
@@ -44,24 +46,49 @@ body {
     font-size: 25px;
 }
 
-.sidebar .header .btn-primary {
+.sidebar .header .btn-mine {
     text-align: center;
-    background-color: ghostwhite;
+    <!-- background-color: ghostwhite; -->
     border-radius: 8px;
     padding: 12px 28px;
     font-size: 16px;
     color: black;
-    float: center;
     margin: auto;
     margin-bottom: 15px;
 }
 
-.sidebar .header .btn-primary:hover {
-    background-color: lightblue;
+.sidebar .header .btn-mine:hover {
+    background-color: ghostwhite;
     cursor: pointer;
 }
 
 .sidebar .chat-rooms-list {
-    margin-left: 15px;
+    margin-left: 25px;
+    color: white;    
+}
+
+.sidebar .chat-rooms-list a {
     color: white;
+}
+
+.chat-room .chat-room-name {
+    padding-right: auto;
+    margin-right: 250px;
+    margin-left: 275px;
+}
+
+.chat-room .messages {
+	background-color: ghostwhite;
+    border-style: groove;
+    border-color: lightgray;
+	height: 400px;
+    padding-right: auto;
+    margin-right: 110px;
+    margin-left: 275px;
+}
+
+.chat-room .message-input {
+    margin-top: 10px;
+    margin-right: 100px;
+    margin-left: 275px;    
 }

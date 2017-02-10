@@ -4,13 +4,36 @@
     <div class="header">
         <p class="chat-rooms-title">Chat Rooms</p>
         <div class="new-chat-room">
-            <button class="btn-primary" ng-click="home.openModal()"> Create New Room</button>
+            <button class="btn-mine" ng-click="home.openModal()"> Create New Room</button>
             <br/>
             <br/>
         </div>
     </div>
 
 	<div class="chat-rooms-list">
-		<div ng-repeat="room in home.chatRooms">{{ room.$value }}</div>
+		<div ng-repeat="room in home.chatRooms">
+            <a ng-click="home.selectRoom(room)" href="#">{{ room.$value }}</a>
+        </div>
 	</div>
+    
+</div>
+
+<div class="chat-room">
+    
+    <div class="chat-room-name">
+        <h3><strong>{{ home.selectedRoom.$value }}</strong></h3>
+    </div>
+
+    <div class="messages">
+        <!-- <p class="messages"></p> -->
+        <p ng-repeat="m in home.messages"><b>{{ m.username }}</b> - {{ m.sentAt }} : <b>{{ m.content }}</b></p>
+    </div>
+
+    <div>
+        <form class="message-input">
+            <input type="text" placeholder=" Enter your message here..." class="message-text" ng-model="something" size= "90">
+            <button class="btn-send" type="butoon" ng-click="sonething">Send</button>
+        </form>
+    </div>
+
 </div>
