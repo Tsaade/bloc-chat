@@ -92,3 +92,8 @@ body {
     margin-right: 100px;
     margin-left: 275px;    
 }
+
+.chat-room .messages .time-stamp {
+    color: dimgray;
+    font-size: 9px;
+}

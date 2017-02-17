@@ -7,7 +7,6 @@
         
         
         function addRoom(value) {
-            //console.log(value);
             rooms.$add(value);
         }
         

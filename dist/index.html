@@ -10,6 +10,7 @@
 		  integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="/styles/home.css">
     <link rel="stylesheet" type="text/css" href="/styles/modal.css">
+    <link rel="stylesheet" type="text/css" href="/styles/username_modal.css">
     
 </head>
 
@@ -22,14 +23,15 @@
     <ui-view></ui-view>
     
     <!-- AngularJS -->
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>    
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-cookies.js"></script>
     
     <!-- AngularFire -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angularFire/2.3.0/angularfire.min.js"></script>
     
     <!-- UI Router -->
     <script src="https://cdn.rawgit.com/angular-ui/ui-router/0.2.18/release/angular-ui-router.js"></script>
-
+    
     <!-- Angular UI -->
     <script src="/scripts/ui-bootstrap-tpls-2.5.0.min.js"></script>
 
@@ -52,7 +54,7 @@
     <script src="/scripts/controllers/homeCtrl.js"></script>
     <script src="/scripts/services/rooms.js"></script>
     <script src="/scripts/services/message.js"></script>
-
+    <script src="/scripts/services/cookies.js"></script>
 </body>
 
 </html>

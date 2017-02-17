@@ -18,6 +18,7 @@
     
 </div>
 
+<!-- Creating the Chat room conversation -->
 <div class="chat-room">
     
     <div class="chat-room-name">
@@ -26,7 +27,7 @@
 
     <div class="messages">
         <!-- <p class="messages"></p> -->
-        <p ng-repeat="m in home.messages"><b>{{ m.username }}</b> - {{ m.sentAt }} : <b>{{ m.content }}</b></p>
+        <p ng-repeat="m in home.messages"><b>{{ m.username }} -</b><span class="time-stamp"> {{ m.sentAt }} :</span> {{ m.content }}</p>
     </div>
 
     <div>

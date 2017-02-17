@@ -1,15 +1,10 @@
 (function() {
     function HomeCtrl(Room, Message, $uibModal, $scope) {        
         this.chatRooms = Room.getRooms().all;
-        var that = this;
         
         this.selectRoom = function(room) {
             this.selectedRoom = room;
             this.messages = Message.getByRoomId(room.$id);
-//                .$loaded()
-//                .then(function(val) {
-//                    debugger;
-//                });
         };
         
         this.openModal = function() {
