@@ -31,10 +31,10 @@
     </div>
 
     <div>
-        <form class="message-input">
-            <input type="text" placeholder=" Enter your message here..." class="message-text" ng-model="something" size= "90">
-            <button class="btn-send" type="butoon" ng-click="sonething">Send</button>
-        </form>
+        <div class="message-input">
+            <input type="text" placeholder=" Enter your message here..." ng-model="home.message" size= "90">
+            <button class="btn-send" type="button" ng-click="home.sendMessage(home.message)">Send</button>
+        </div>
     </div>
 
 </div>

@@ -27,6 +27,13 @@
 				Room.addRoom(data);
 			});
 		};
+        
+        this.sendMessage = function(msg) {
+            if ( this.selectedRoom == null ) return;
+            
+            Message.send(msg, this.selectedRoom.$id);
+            this.message = "";
+        };
 	};
     
     angular
